@@ -41,6 +41,7 @@
   height: fit-content;
   background-color: hsla(348deg, 92%, 28%, 0.3);
   margin: 50px;
+  max-height: 480px;
 }
 .cake-main {
   display: flex;
@@ -89,6 +90,8 @@
 .cake-text-description {
   font-size: 1.2rem;
   font-weight: 400;
+  min-height: 100px;
+  overflow: scroll;
 }
 
 .title {
@@ -232,9 +235,17 @@
   color: #FFFFFF;
 }
 
+@media (max-width: 1300px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 800px) {
   body {
     background-color: #250902;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
   .sec-1-main-menu .nav-menu {
     display: none;
@@ -247,9 +258,13 @@
     padding: 10px;
     margin: 20px;
   }
+  .cake-main {
+    order: 2;
+  }
   .cake-text {
     width: 320px;
     padding: 10px 24px;
+    order: 1;
   }
   .cake-text-name {
     font-size: 1.5rem;
@@ -258,6 +273,7 @@
     display: none;
   }
   .button-description {
+    order: 3;
     display: inline;
     background-color: #250902;
   }
@@ -269,6 +285,15 @@
   }
   #map {
     border: solid 10px #890620;
+  }
+  .social-media {
+    width: 100vw;
+  }
+  .social-media .link {
+    font-size: 3rem;
+  }
+  .social-media a:hover i {
+    font-size: 3.2rem;
   }
 }
 .container-arrow {
@@ -437,11 +462,6 @@ body {
   #map {
     width: 350px;
     height: 400px;
-  }
-  .social-media {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
 }
 

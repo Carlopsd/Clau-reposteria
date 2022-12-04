@@ -67,7 +67,7 @@ $location-background-color:#890620;
     height: $height-section-cake;
     background-color: $section-cake-background-color;
     margin: 50px;
-    
+    max-height: 480px;
     &-main{
         display: flex;
         flex-direction: column;
@@ -115,6 +115,8 @@ $location-background-color:#890620;
         &-description{
             font-size: 1.2rem;
             font-weight: 400;
+            min-height:  100px;
+            overflow: scroll;
         }
     }
 }
@@ -284,10 +286,17 @@ $location-background-color:#890620;
     }
 }
 
-
+@media (max-width:1300px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media (max-width:800px){
     body{
         background-color: #250902;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 
     .sec-1-main-menu{
@@ -304,9 +313,13 @@ $location-background-color:#890620;
         border-radius: 20px;
         padding: 10px;
         margin: 20px;
+        &-main{
+            order: 2;
+        }
         &-text{
             width: $width-cake;
             padding: 10px 24px;
+            order: 1;
             &-name{
                 font-size: 1.5rem;
             }
@@ -316,6 +329,7 @@ $location-background-color:#890620;
         }
     }
     .button-description{
+        order: 3;
         display: inline;
         background-color: #250902;
     }
@@ -331,5 +345,15 @@ $location-background-color:#890620;
         border: solid 10px $location-background-color;
     }
 
+    .social-media{
+        width: 100vw;
+        .link{
+            font-size: 3rem;
+        }
+        a:hover i {
+            font-size: 3.2rem;
+        }
+    
+    }
 }
 
