@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  min-width: 700px;
+  min-width: 300px;
   max-width: 1900px;
   padding: 1rem 0;
 }
@@ -110,7 +110,7 @@
   margin: 0;
 }
 .button-description button {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -236,7 +236,7 @@
   body {
     background-color: #250902;
   }
-  .nav-menu {
+  .sec-1-main-menu .nav-menu {
     display: none;
   }
   .cake {
@@ -251,12 +251,18 @@
     width: 320px;
     padding: 10px 24px;
   }
+  .cake-text-name {
+    font-size: 1.5rem;
+  }
   .cake-text-description {
     display: none;
   }
   .button-description {
     display: inline;
     background-color: #250902;
+  }
+  .location-schedule {
+    width: 300px;
   }
 }
 .container-arrow {
@@ -398,23 +404,15 @@ body {
 }
 
 @media (max-width: 800px) {
-  body {
-    margin-left: 30%;
-  }
   .nav {
     padding: 0;
-  }
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
-  .nav-menu a {
-    font-size: 0.9rem;
-  }
   .sec-2-img {
-    width: 700px;
+    width: 100vw;
     height: 700px;
+    background-position-y: -200px;
+    background-position-x: -100px;
   }
   .sec-3-cakes {
     margin-top: -120px;
@@ -426,7 +424,7 @@ body {
     flex-direction: column;
   }
   #map {
-    width: 500px;
+    width: 300px;
     height: 400px;
   }
   .social-media {
