@@ -1,0 +1,438 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-width: 700px;
+  max-width: 1900px;
+  padding: 1rem 0;
+}
+.nav-logo {
+  margin: 10px;
+  display: flex;
+  color: #FFFFFF;
+}
+.nav-logo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.nav-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 1rem;
+}
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.cake {
+  width: 680px;
+  max-width: 680px;
+  min-width: 200px;
+  display: flex;
+  height: fit-content;
+  background-color: hsla(348deg, 92%, 28%, 0.3);
+  margin: 50px;
+}
+.cake-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #B6465F;
+  width: 320px;
+  border-radius: 10px;
+}
+.cake-main img {
+  margin: 10px;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.cake-main-price {
+  background-color: #EBD4CB;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.cake-main-price p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+.cake-main-price div {
+  display: grid;
+  grid-template-columns: 150px 150px;
+}
+.cake-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFFFFF;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+}
+.cake-text-name {
+  font-size: 2rem;
+  font-family: "Inter";
+  font-weight: 700;
+}
+.cake-text-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.title {
+  color: #2C0703;
+  background-color: #DA9F93;
+  width: fit-content;
+  border-radius: 10px;
+}
+.title h1 {
+  padding: 10px 15px;
+  margin: 0;
+}
+
+.button-description {
+  display: none;
+  width: 300px;
+}
+.button-description p {
+  margin: 0;
+}
+.button-description button {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFFFFF;
+  background-color: #640D14;
+  width: 300px;
+}
+.button-description button:hover {
+  background-color: #38040e;
+  color: #FFFFFF;
+}
+.button-description .collapse {
+  margin-bottom: 10px;
+  width: 300px;
+}
+.button-description .collapse .card-body {
+  background-color: #EBD4CB;
+}
+
+.location {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  margin-top: 20px;
+}
+.location-title {
+  background-color: #890620;
+  padding: 10px;
+  border-radius: 20px;
+}
+.location-schedule {
+  background-color: #890620;
+  padding: 10px;
+  border-radius: 20px;
+  width: 380px;
+}
+.location-schedule div {
+  background-color: #B6465F;
+  margin: 10px;
+  border-radius: 10px;
+}
+.location-schedule div p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#map {
+  border: solid 20px #890620;
+  border-radius: 10px;
+  margin: 50px;
+  width: 900px;
+  height: 400px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  width: 1000px;
+}
+.social-media .link {
+  height: 120px;
+  width: 120px;
+  background-color: #640D14;
+  border-radius: 100%;
+  text-align: center;
+  margin: 7px;
+  line-height: 80px;
+  font-size: 5rem;
+  padding-top: 2%;
+}
+.social-media a i {
+  transition: all 0.3s linear;
+}
+.social-media a:hover i {
+  font-size: 5.2rem;
+}
+.social-media .facebook:hover {
+  background-color: blue;
+}
+.social-media .facebook:hover i {
+  color: #FFFFFF;
+}
+.social-media .instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-media .instagram:hover {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+.social-media .instagram:hover i {
+  border-radius: 20%;
+  background: #FFFFFF;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-media .correo {
+  color: #2C0703;
+}
+.social-media .correo:hover {
+  background-color: #2C0703;
+}
+.social-media .correo:hover i {
+  color: #FFFFFF;
+}
+.social-media .whatsapp {
+  color: green;
+}
+.social-media .whatsapp:hover {
+  background-color: green;
+}
+.social-media .whatsapp:hover i {
+  color: #FFFFFF;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: #250902;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .cake {
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+  }
+  .cake-text {
+    width: 320px;
+    padding: 10px 24px;
+  }
+  .cake-text-description {
+    display: none;
+  }
+  .button-description {
+    display: inline;
+    background-color: #250902;
+  }
+}
+.container-arrow {
+  position: relative;
+  top: 650px;
+  width: 100px;
+  height: 50px;
+}
+
+.arrow {
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.arrow:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.arrow:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #2C0703;
+}
+
+.arrow:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.arrow:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(90px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(105px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+@media (max-width: 800px) {
+  .container-arrow {
+    top: 350px;
+  }
+  .arrow {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+  }
+}
+.cake {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrarArriba {
+  animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+  0% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+body {
+  background-color: #640D14;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+}
+
+* {
+  font-family: "Inter";
+}
+
+.sec-1-main-menu {
+  position: sticky;
+}
+
+.sec-2-img {
+  align-self: center;
+  background-image: url(../media/cakes/Inicio.png);
+  width: 1900px;
+  height: 850px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+}
+
+.sec-3-cakes {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.sec-4-location {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sec-5-socialmedia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin-left: 30%;
+  }
+  .nav {
+    padding: 0;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu a {
+    font-size: 0.9rem;
+  }
+  .sec-2-img {
+    width: 700px;
+    height: 700px;
+  }
+  .sec-3-cakes {
+    margin-top: -120px;
+  }
+  .sec-4-location {
+    margin-top: 20px;
+  }
+  .sec-4-location .location {
+    flex-direction: column;
+  }
+  #map {
+    width: 500px;
+    height: 400px;
+  }
+  .social-media {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

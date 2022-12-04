@@ -1,0 +1,85 @@
+@use "objetcs";
+@use "animations";
+
+body{
+    background-color: objetcs.$background-color;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+}
+*{
+    font-family:'Inter';
+}
+.sec-1-main-menu{
+    position: sticky;
+}
+.sec-2-img{
+    align-self: center;
+    background-image: url(../media/cakes/Inicio.png);
+    width: 1900px;
+    height:850px;
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position-y:-200px;
+}
+.sec-3-cakes{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.sec-4-location{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec-5-socialmedia{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:800px){
+    body{
+        margin-left: 30%;
+    }
+
+    .nav{
+        padding: 0;
+        &-menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .sec-2-img{
+        width: 700px;
+        height: 700px;
+    }
+    .sec-3-cakes{
+        margin-top: -120px;
+    }
+
+    .sec-4-location{
+        margin-top: 20px;
+        .location{
+            flex-direction: column;
+        }
+    }
+    #map {
+        width: 500px;
+        height: 400px;
+    }
+    .social-media{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
