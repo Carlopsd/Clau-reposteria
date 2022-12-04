@@ -264,6 +264,9 @@
   .location-schedule {
     width: 300px;
   }
+  #map {
+    border: solid 10px #890620;
+  }
 }
 .container-arrow {
   position: relative;
@@ -429,7 +432,7 @@ body {
     flex-direction: column;
   }
   #map {
-    width: 400px;
+    width: 350px;
     height: 400px;
   }
   .social-media {
