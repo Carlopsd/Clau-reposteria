@@ -67,7 +67,7 @@ $location-background-color:#890620;
     height: $height-section-cake;
     background-color: $section-cake-background-color;
     margin: 50px;
-    max-height: 480px;
+    max-height: 600px;
     &-main{
         display: flex;
         flex-direction: column;
@@ -116,7 +116,6 @@ $location-background-color:#890620;
             font-size: 1.2rem;
             font-weight: 400;
             min-height:  100px;
-            overflow: scroll;
         }
     }
 }
