@@ -261,6 +261,9 @@
     display: inline;
     background-color: #250902;
   }
+  .location-title {
+    font-size: 1.5rem;
+  }
   .location-schedule {
     width: 300px;
   }

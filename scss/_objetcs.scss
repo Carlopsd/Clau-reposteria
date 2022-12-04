@@ -289,6 +289,7 @@ $location-background-color:#890620;
     body{
         background-color: #250902;
     }
+
     .sec-1-main-menu{
         .nav-menu{
         display: none;
@@ -318,8 +319,13 @@ $location-background-color:#890620;
         display: inline;
         background-color: #250902;
     }
-    .location-schedule{
+    .location{
+        &-title{
+            font-size: 1.5rem;
+        }
+        &-schedule{
         width: 300px;
+        }
     }
     #map{
         border: solid 10px $location-background-color;
